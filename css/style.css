@@ -19658,4 +19658,12 @@ html.ie11 .bs-searchbox .form-control {
     display: none !important;
   }
 }
+
+.sidebar-userpic-name,
+.profile-usertitle-job,
+.sidebar-user-panel *,
+.sidebar-user-panel .profile-usertitle,
+.sidebar-user-panel .profile-usertitle * {
+  font-family: 'Philosopher', sans-serif !important;
+}
 /*# sourceMappingURL=style.css.map */
