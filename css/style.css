@@ -3628,43 +3628,7 @@ body, input, button, h1, h2, h3, h4, h5, h6, p, span, a, label {
   border: 1px solid #888 !important;
   margin: 10px;
 }
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  src: url("https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/roboto-v27-latin-regular.eot");
-  src: local(""),
-    url("https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/roboto-v27-latin-regular.eot?#iefix")
-      format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/roboto-v27-latin-regular.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/roboto-v27-latin-regular.woff") format("woff"),
-    url("https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/roboto-v27-latin-regular.ttf") format("truetype"),
-    url("https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/roboto-v27-latin-regular.svg#Roboto") format("svg");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  src: url("https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/roboto-v27-latin-500.eot");
-  src: local(""),
-    url("https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/roboto-v27-latin-500.eot?#iefix") format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/roboto-v27-latin-500.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/roboto-v27-latin-500.woff") format("woff"),
-    url("https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/roboto-v27-latin-500.ttf") format("truetype"),
-    url("https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/roboto-v27-latin-500.svg#Roboto") format("svg");
-}
-@font-face {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  src: url("https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/roboto-v27-latin-700.eot");
-  src: local(""),
-    url("https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/roboto-v27-latin-700.eot?#iefix") format("embedded-opentype"),
-    url("https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/roboto-v27-latin-700.woff2") format("woff2"),
-    url("https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/roboto-v27-latin-700.woff") format("woff"),
-    url("https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/roboto-v27-latin-700.ttf") format("truetype"),
-    url("https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/roboto-v27-latin-700.svg#Roboto") format("svg");
-}
+
 body,
 html {
   background-color: #f1f2f7;
