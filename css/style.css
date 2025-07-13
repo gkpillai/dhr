@@ -11502,6 +11502,7 @@ fieldset[disabled] .form-control {
 }
 .profile-usertitle {
   text-align: center;
+  font-family: 'Philosopher';
   margin-bottom: 10px;
 }
 .sidebar-userpic-name {
