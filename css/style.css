@@ -1,6 +1,7 @@
 @charset "UTF-8";
-@import url(themify-icons.css);
-@import url(simple-line-icons.css);
+@import url('https://cdn.jsdelivr.net/gh/gkpillai/dhr/css/themify-icons.css');
+@import url('https://cdn.jsdelivr.net/gh/gkpillai/dhr/css/simple-line-icons.css');
+
 .m-l--125 {
   margin-left: -125px;
 }
