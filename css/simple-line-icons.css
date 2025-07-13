@@ -1,12 +1,12 @@
 @font-face {
     font-family: simple-line-icons;
-    src: url(https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/Simple-Line-Icons4c82.eot?-i3a2kk);
-    src: url(https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/Simple-Line-Iconsd41d.eot?#iefix-i3a2kk)
+    src: url(https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/Simple-Line-Icons.eot);
+    src: url(https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/Simple-Line-Iconsd.eot)
         format("embedded-opentype"),
-      url(https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/Simple-Line-Icons4c82.ttf?-i3a2kk) format("truetype"),
-      url(https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/Simple-Line-Icons4c82.woff2?-i3a2kk) format("woff2"),
-      url(ttps://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/Simple-Line-Icons4c82.woff?-i3a2kk) format("woff"),
-      url(ttps://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/Simple-Line-Icons4c82.svg?-i3a2kk#simple-line-icons)
+      url(https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/Simple-Line-Icons.ttf) format("truetype"),
+      url(https://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/Simple-Line-Icons.woff2) format("woff2"),
+      url(ttps://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/Simple-Line-Icons.woff) format("woff"),
+      url(ttps://cdn.jsdelivr.net/gh/gkpillai/dhr/fonts/Simple-Line-Icons.svg)
         format("svg");
     font-weight: 400;
     font-style: normal;
