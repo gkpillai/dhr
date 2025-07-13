@@ -11506,6 +11506,7 @@ fieldset[disabled] .form-control {
 }
 .sidebar-userpic-name {
   color: #181c32;
+  font-family: 'Philosopher';
   font-weight: 600;
   font-size: 15px;
 }
