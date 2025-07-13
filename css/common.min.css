@@ -1813,7 +1813,7 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Philosopher,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 ul:not(.browser-default) {
@@ -3535,7 +3535,7 @@ a {
 }
 html {
   line-height: 1.5;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Philosopher,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.87);
@@ -7640,7 +7640,7 @@ input[type="range"]::-ms-thumb {
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Philosopher,
     "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
