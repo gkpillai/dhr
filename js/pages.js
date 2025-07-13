@@ -5,16 +5,15 @@
 
     /*==================================================================
     [ Focus input ]*/
-    $('.input100').each(function () {
-        $(this).on('blur', function () {
-            if ($(this).val().trim() != "") {
-                $(this).addClass('has-val');
-            }
-            else {
-                $(this).removeClass('has-val');
-            }
-        })
-    })
+    $('.input100').each(function(){
+        $(this).on('input', function(){
+          if($(this).val().trim() !== "") {
+            $(this).nextAll('.label-input100').hide();
+          }
+          else {
+            $(this).nextAll('.label-input100').show();
+          }
+        })  
 
 
     /*==================================================================
