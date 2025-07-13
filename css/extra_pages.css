@@ -185,7 +185,7 @@
     height: 48px !important;
   }
   .has-val + .focus-input100 + .label-input100 {
-    top: 7px;
+    top: -20px;
     font-size: 13px;
   }
   .input-checkbox100 {
