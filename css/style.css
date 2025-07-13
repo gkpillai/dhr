@@ -11511,7 +11511,8 @@ fieldset[disabled] .form-control {
   font-size: 15px;
 }
 .profile-usertitle-job {
-  font-size: 10px;
+  font-size: 15px;
+  font-family: 'Philosopher';
   color: #919aa3;
 }
 .sidebar-userpic-btn {
