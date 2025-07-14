@@ -23,10 +23,9 @@ function addScript(src) {
   document.body.appendChild(script);
 }
 
-const empNo = sessionStorage.getItem("empNo");
+const localEmpNo = sessionStorage.getItem("empNo");
 
-if (!empNo) {
-  // Not logged in, redirect to login
+if (!localEmpNo) {
   navigateToPage("login");
 } else {
   google.script.run.withSuccessHandler(function (data) {
@@ -38,8 +37,9 @@ if (!empNo) {
 
     if (nameEl) nameEl.innerText = nameTitle;
     if (desigEl) desigEl.innerText = designationTitle;
-  }).getEmployeeDetails(empNo);
+  }).getEmployeeDetails(localEmpNo);
 }
+
 
 function toTitleCase(str) {
   return str.toLowerCase().replace(/\b\w/g, function(txt) {
