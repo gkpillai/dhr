@@ -1,51 +1,55 @@
-(function() {
-  // your entire code here
 
-  google.script.run.withSuccessHandler(function(content) {
-    document.getElementById("header-container").innerHTML = content;
-    addScript("https://cdn.jsdelivr.net/gh/gkpillai/dhr/js/common.min.js");
-  }).createHeader();
+google.script.run.withSuccessHandler(function(content) {
+  document.getElementById("header-container").innerHTML = content;
 
-  google.script.run.withSuccessHandler(function(content) {
-    document.getElementById("sidebar-container").innerHTML = content;
-    addScript("https://cdn.jsdelivr.net/gh/gkpillai/dhr/js/admin.js");
-  }).createSidebar();
+  // Load each script separately
+  addScript("https://cdn.jsdelivr.net/gh/gkpillai/dhr/js/common.min.js");
+ 
+}).createHeader();
 
-  function addScript(src) {
-    const script = document.createElement("script");
-    script.src = src;
-    script.onload = function() {
-      console.log(src + " loaded");
-    };
-    document.body.appendChild(script);
-  }
+google.script.run.withSuccessHandler(function(content) {
+  document.getElementById("sidebar-container").innerHTML = content;
 
-  let localEmpNo = sessionStorage.getItem("empNo");
+  // Load admin script after sidebar
+  addScript("https://cdn.jsdelivr.net/gh/gkpillai/dhr/js/admin.js");
+}).createSidebar();
 
-  if (!localEmpNo) {
-    navigateToPage("login");
-  } else {
-    google.script.run.withSuccessHandler(function (data) {
-      const nameTitle = toTitleCase(data.name || "Unknown");
-      const designationTitle = toTitleCase(data.designation || "Unknown");
+function addScript(src) {
+  const script = document.createElement("script");
+  script.src = src;
+  script.onload = function() {
+    console.log(src + " loaded");
+  };
+  document.body.appendChild(script);
+}
 
-      const nameEl = document.querySelector(".sidebar-userpic-name");
-      const desigEl = document.querySelector(".profile-usertitle-job");
+const empNo = sessionStorage.getItem("empNo");
 
-      if (nameEl) nameEl.innerText = nameTitle;
-      if (desigEl) desigEl.innerText = designationTitle;
-    }).getEmployeeDetails(localEmpNo);
-  }
+if (!empNo) {
+  // Not logged in, redirect to login
+  navigateToPage("login");
+} else {
+  google.script.run.withSuccessHandler(function (data) {
+    const nameTitle = toTitleCase(data.name || "Unknown");
+    const designationTitle = toTitleCase(data.designation || "Unknown");
 
-  function toTitleCase(str) {
-    return str.toLowerCase().replace(/\b\w/g, function(txt) {
-      return txt.toUpperCase();
-    });
-  }
+    const nameEl = document.querySelector(".sidebar-userpic-name");
+    const desigEl = document.querySelector(".profile-usertitle-job");
 
-  function logout() {
-    sessionStorage.clear();
-    localStorage.clear();
-    navigateToPage("login");
-  }
-})();
+    if (nameEl) nameEl.innerText = nameTitle;
+    if (desigEl) desigEl.innerText = designationTitle;
+  }).getEmployeeDetails(empNo);
+}
+
+function toTitleCase(str) {
+  return str.toLowerCase().replace(/\b\w/g, function(txt) {
+    return txt.toUpperCase();
+  });
+}
+
+function logout() {
+  sessionStorage.clear();
+  localStorage.clear();
+  navigateToPage("login");
+}
+
