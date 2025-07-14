@@ -4,8 +4,7 @@ google.script.run.withSuccessHandler(function(content) {
 
   // Load each script separately
   addScript("https://cdn.jsdelivr.net/gh/gkpillai/dhr/js/common.min.js");
-  addScript("https://cdn.jsdelivr.net/gh/gkpillai/dhr/js/index.js");
-  addScript("https://cdn.jsdelivr.net/gh/gkpillai/dhr/js/todo.js");
+ 
 }).createHeader();
 
 google.script.run.withSuccessHandler(function(content) {
