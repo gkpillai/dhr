@@ -23,22 +23,24 @@ function addScript(src) {
   document.body.appendChild(script);
 }
 
-const localEmpNo = sessionStorage.getItem("empNo");
+(function() {
+  const localEmpNo = sessionStorage.getItem("empNo");
 
-if (!localEmpNo) {
-  navigateToPage("login");
-} else {
-  google.script.run.withSuccessHandler(function (data) {
-    const nameTitle = toTitleCase(data.name || "Unknown");
-    const designationTitle = toTitleCase(data.designation || "Unknown");
+  if (!localEmpNo) {
+    navigateToPage("login");
+  } else {
+    google.script.run.withSuccessHandler(function (data) {
+      const nameTitle = toTitleCase(data.name || "Unknown");
+      const designationTitle = toTitleCase(data.designation || "Unknown");
 
-    const nameEl = document.querySelector(".sidebar-userpic-name");
-    const desigEl = document.querySelector(".profile-usertitle-job");
+      const nameEl = document.querySelector(".sidebar-userpic-name");
+      const desigEl = document.querySelector(".profile-usertitle-job");
 
-    if (nameEl) nameEl.innerText = nameTitle;
-    if (desigEl) desigEl.innerText = designationTitle;
-  }).getEmployeeDetails(localEmpNo);
-}
+      if (nameEl) nameEl.innerText = nameTitle;
+      if (desigEl) desigEl.innerText = designationTitle;
+    }).getEmployeeDetails(localEmpNo);
+  }
+})();
 
 
 function toTitleCase(str) {
