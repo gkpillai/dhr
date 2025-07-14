@@ -20,7 +20,7 @@
     document.body.appendChild(script);
   }
 
-  const localEmpNo = sessionStorage.getItem("empNo");
+  let localEmpNo = sessionStorage.getItem("empNo");
 
   if (!localEmpNo) {
     navigateToPage("login");
