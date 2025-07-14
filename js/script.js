@@ -15,6 +15,12 @@ google.script.run.withSuccessHandler(function(content) {
 }).createSidebar();
 
 function addScript(src) {
+  // Check if already added
+  if (document.querySelector(`script[src="${src}"]`)) {
+    console.log(src + " already loaded");
+    return;
+  }
+
   const script = document.createElement("script");
   script.src = src;
   script.onload = function() {
